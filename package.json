@@ -1,0 +1,1 @@
+{"name":"our-basket","private":true,"version":"0.1.0","type":"module","scripts":{"typecheck":"tsc --noEmit","build":"node scripts/build.mjs","test":"npm run build && node --test tests/*.test.mjs","local":"node scripts/local.mjs"},"devDependencies":{"typescript":"^5.8.3","wrangler":"^4.0.0"}}

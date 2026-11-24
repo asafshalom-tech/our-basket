@@ -1,0 +1,90 @@
+TAP version 13
+# Subtest: REST adapter uses managed token and refuses another expected account
+ok 1 - REST adapter uses managed token and refuses another expected account
+  ---
+  duration_ms: 28.127331
+  type: 'test'
+  ...
+# Subtest: mutation passes expected actor and maps conflict
+ok 2 - mutation passes expected actor and maps conflict
+  ---
+  duration_ms: 1.42656
+  type: 'test'
+  ...
+# (node:1940) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: central example
+ok 3 - central example
+  ---
+  duration_ms: 4.31466
+  type: 'test'
+  ...
+# Subtest: words, fraction, percentages and separators
+ok 4 - words, fraction, percentages and separators
+  ---
+  duration_ms: 3.738083
+  type: 'test'
+  ...
+# Subtest: compound terms, aliases, unknown and override
+ok 5 - compound terms, aliases, unknown and override
+  ---
+  duration_ms: 3.765137
+  type: 'test'
+  ...
+# Subtest: empty database and unauthorized identity, origin, malformed product
+ok 6 - empty database and unauthorized identity, origin, malformed product
+  ---
+  duration_ms: 27.227235
+  type: 'test'
+  ...
+# Subtest: concurrent purchase, replay, actor/payload binding, cancel and repurchase, stale undo
+ok 7 - concurrent purchase, replay, actor/payload binding, cancel and repurchase, stale undo
+  ---
+  duration_ms: 22.259837
+  type: 'test'
+  ...
+# Subtest: remove without purchase, snapshot preserved, re-add new ID, stale edits
+ok 8 - remove without purchase, snapshot preserved, re-add new ID, stale edits
+  ---
+  duration_ms: 12.808056
+  type: 'test'
+  ...
+# Subtest: favorite and override shared; CSV formula escaping
+ok 9 - favorite and override shared; CSV formula escaping
+  ---
+  duration_ms: 7.025534
+  type: 'test'
+  ...
+# Subtest: queue dependencies, conflicts do not block other items, optimistic dedup and discard
+ok 10 - queue dependencies, conflicts do not block other items, optimistic dedup and discard
+  ---
+  duration_ms: 0.821228
+  type: 'test'
+  ...
+# Subtest: explicit retry retains event time and updates dependent undo reference
+ok 11 - explicit retry retains event time and updates dependent undo reference
+  ---
+  duration_ms: 0.567705
+  type: 'test'
+  ...
+# Subtest: expected account mismatch rejects before writing and polling revision changes
+ok 12 - expected account mismatch rejects before writing and polling revision changes
+  ---
+  duration_ms: 3.761541
+  type: 'test'
+  ...
+# Subtest: JWT verifier rejects wrong issuer, audience, signature and nonmember; accepts valid mock signed Access JWT
+ok 13 - JWT verifier rejects wrong issuer, audience, signature and nonmember; accepts valid mock signed Access JWT
+  ---
+  duration_ms: 89.063382
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 269.342628

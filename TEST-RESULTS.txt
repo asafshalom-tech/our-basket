@@ -1,0 +1,91 @@
+
+> our-basket@0.1.0 test
+> npm run build && node --test tests/*.test.mjs
+
+
+> our-basket@0.1.0 build
+> node scripts/build.mjs
+
+Production assets: 9 934b3bb21321
+TAP version 13
+# (node:1416) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: central example
+ok 1 - central example
+  ---
+  duration_ms: 4.54403
+  type: 'test'
+  ...
+# Subtest: words, fraction, percentages and separators
+ok 2 - words, fraction, percentages and separators
+  ---
+  duration_ms: 4.725149
+  type: 'test'
+  ...
+# Subtest: compound terms, aliases, unknown and override
+ok 3 - compound terms, aliases, unknown and override
+  ---
+  duration_ms: 3.658972
+  type: 'test'
+  ...
+# Subtest: empty database and unauthorized identity, origin, malformed product
+ok 4 - empty database and unauthorized identity, origin, malformed product
+  ---
+  duration_ms: 34.490397
+  type: 'test'
+  ...
+# Subtest: concurrent purchase, replay, actor/payload binding, cancel and repurchase, stale undo
+ok 5 - concurrent purchase, replay, actor/payload binding, cancel and repurchase, stale undo
+  ---
+  duration_ms: 24.918626
+  type: 'test'
+  ...
+# Subtest: remove without purchase, snapshot preserved, re-add new ID, stale edits
+ok 6 - remove without purchase, snapshot preserved, re-add new ID, stale edits
+  ---
+  duration_ms: 12.257715
+  type: 'test'
+  ...
+# Subtest: favorite and override shared; CSV formula escaping
+ok 7 - favorite and override shared; CSV formula escaping
+  ---
+  duration_ms: 6.711798
+  type: 'test'
+  ...
+# Subtest: queue dependencies, conflicts do not block other items, optimistic dedup and discard
+ok 8 - queue dependencies, conflicts do not block other items, optimistic dedup and discard
+  ---
+  duration_ms: 0.77621
+  type: 'test'
+  ...
+# Subtest: explicit retry retains event time and updates dependent undo reference
+ok 9 - explicit retry retains event time and updates dependent undo reference
+  ---
+  duration_ms: 0.491124
+  type: 'test'
+  ...
+# Subtest: expected account mismatch rejects before writing and polling revision changes
+ok 10 - expected account mismatch rejects before writing and polling revision changes
+  ---
+  duration_ms: 3.513867
+  type: 'test'
+  ...
+# Subtest: JWT verifier rejects wrong issuer, audience, signature and nonmember; accepts valid mock signed Access JWT
+ok 11 - JWT verifier rejects wrong issuer, audience, signature and nonmember; accepts valid mock signed Access JWT
+  ---
+  duration_ms: 236.408289
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 420.840634
+
+> our-basket@0.1.0 typecheck
+> tsc --noEmit
+
