@@ -1,0 +1,23 @@
+name: Database Keep Alive
+
+on:
+  schedule:
+    - cron: '17 2,10,18 * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Check Supabase
+        run: |
+          curl --fail --silent --show-error \
+            --max-time 30 \
+            -X POST \
+            'https://ayessxdbodavuvnpbquj.supabase.co/rest/v1/rpc/basket_health' \
+            -H 'apikey: sb_publishable_4SUhd2-n41XqRAFQp7RmMA_zOYkrjMb' \
+            -H 'Content-Type: application/json' \
+            -d '{}'
